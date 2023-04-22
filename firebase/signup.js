@@ -11,11 +11,11 @@ export default async function signUp(email, password) {
     result = await createUserWithEmailAndPassword(auth, email, password);
 
     // // Add data to db
-    data = {
+    const data = {
       email: result.user.email,
       cookbook: []
     }
-    const { dataResult, error } = await addData('users', 'user-id', data)
+    const { dataResult, error } = await addData('users', result.user.uid, data)
 
     if (error) {
       return console.log(error)
