@@ -32,7 +32,7 @@ export const AuthContextProvider = ({ children }) => {
   return (
     <AuthContext.Provider value={{ user }}>
       {loading ? <div className="flex flex-col items-center h-full gap-2 sm:mt-6">
-        <Image className="animate-spin" src={loadingSpinner} width={64} height={64} />
+        <Image className="animate-spin" src={loadingSpinner} width={64} height={64} alt="Leaf loading spinner" />
         <p className="font-bold">Loading...</p>
       </div> : children}
     </AuthContext.Provider>
