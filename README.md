@@ -13,7 +13,10 @@ Made in < 34 hours for MLH ClimateHacks hackathon.
 - Firebase Auth & Cloud Storage
 - [Recipe dataset csv](https://www.kaggle.com/datasets/rodrigoazs/vegan-recipes?resource=download)
 - [Pulsar Color Icons by Icons8](https://icons8.com/icon/LI3lJ9ZSRh59/ingredients)
-- [Signup page image](https://unsplash.com/photos/gkgw3O2pbpQ) - Unsplash by Fernando Andrade
+- Images from Unsplash
+  - [Signup carrots](https://unsplash.com/photos/gkgw3O2pbpQ) by Fernando Andrade
+  - [Homepage flowers](https://unsplash.com/photos/caZQoord96c) by Shaylyn
+  - [Homepage greens](https://unsplash.com/photos/i14VzlCp-Eo) by Monika Grabkowska
 
 ### Resources
 
