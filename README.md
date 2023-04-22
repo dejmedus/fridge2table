@@ -11,11 +11,23 @@ Made in < 34 hours for MLH ClimateHacks hackathon.
 - TailwindCSS
 - HyperUI
 - Firebase Auth & Cloud Storage
+- [Recipe dataset csv](https://www.kaggle.com/datasets/rodrigoazs/vegan-recipes?resource=download)
 - [Pulsar Color Icons by Icons8](https://icons8.com/icon/LI3lJ9ZSRh59/ingredients)
+- [Signup page image](https://unsplash.com/photos/gkgw3O2pbpQ) - Unsplash by Fernando Andrade
 
 ### Resources
 
+#### Code
+
 - [Next.js 13 & Firebase tutorial](https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/) - Free code camp
+  
+#### Data
+
+- [Meatless Monday Campaign](https://www.mondaycampaigns.org/meatless-monday)
+- [Environmental impacts of food](https://ourworldindata.org/environmental-impacts-of-food ) - Our world in data
+- [UN Climate Issues - Food](https://www.un.org/en/climatechange/science/climate-issues/food)
+- [Compare food impact](https://www.washingtonpost.com/climate-environment/interactive/2023/food-impact-climate-water-wildlife/)
+
 ### Setup
 
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) fridge2table
@@ -31,3 +43,5 @@ cd fridge2table
 ```shell
 npm run dev
 ```
+
+### Screenshots
