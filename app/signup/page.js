@@ -119,7 +119,7 @@ function Signup() {
 
                             <p className="flex gap-2 mt-4 text-sm text-neutral-500 sm:mt-0">
                                 Already have an account?
-                                <Link href="/signin" className="underline text-neutral-700 hover:text-lime-700">Log in</Link>
+                                <Link href="/signin" className="underline text-neutral-700 hover:text-lime-700">Sign in</Link>
                             </p>
                         </div>
                     </form>
