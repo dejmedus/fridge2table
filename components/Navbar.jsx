@@ -1,43 +1,57 @@
+'use client'
+
 import Link from "next/link"
 import Image from "next/image"
+import { useAuthContext } from "@/context/AuthContext";
 import fridge2table from "@/assets/fridge2table.png"
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
+    const { user } = useAuthContext()
+    const currentPath = usePathname();
+
     return (
         <header aria-label="Site Header" className="bg-white">
             <div
                 className="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto shadow-sm sm:px-6 lg:px-8"
             >
-                <Link className="block" href="/">
+                <Link className="flex items-center gap-2 text-lime-950" href="/">
                     <span className="sr-only">Home</span>
-                    <Image src={fridge2table} width={48} height={48} alt="Fridge2Table logo. Bowl with food." />
+                    <Image src={fridge2table} width={38} height={38} alt="Fridge2Table logo. Bowl with food." />
+                    <h1 className="text-lg font-bold">Fridge2Table</h1>
                 </Link>
 
                 <div className="flex items-center justify-end flex-1 md:justify-between">
                     <nav aria-label="Site Nav" className="hidden md:block">
                         <ul className="flex items-center gap-6 text-sm">
-                            <Navlink name="Ingredient Swap" path="/ingredient-swap" />
-                            <Navlink name="Why?" path="/why" />
+                            <Navlink name="Recipe Finder" path="/recipe-finder" currentPath={currentPath} />
+                            <Navlink name="Ingredient Swap" path="/ingredient-swap" currentPath={currentPath} />
+                            <Navlink name="Why Plant-Based?" path="/why-plant-based" currentPath={currentPath} />
                         </ul>
                     </nav>
 
                     <div className="flex items-center gap-4">
-                        <div className="sm:flex sm:gap-4">
-                            <a
+                        {!user ?
+                            <div className="sm:flex sm:gap-4">
+                                <a
+                                    className="block rounded-md bg-lime-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-lime-700"
+                                    href="/signin"
+                                >
+                                    Login
+                                </a>
+
+                                <a
+                                    className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-lime-600 transition hover:text-lime-600/75 sm:block"
+                                    href="/signup"
+                                >
+                                    Signup
+                                </a>
+                            </div> : <a
                                 className="block rounded-md bg-lime-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-lime-700"
-                                href="/"
+                                href="/account"
                             >
-                                Login
-                            </a>
-
-                            <a
-                                className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-lime-600 transition hover:text-lime-600/75 sm:block"
-                                href="/"
-                            >
-                                Signup
-                            </a>
-                        </div>
-
+                                Account
+                            </a>}
                         <button
                             className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
                         >
@@ -68,9 +82,10 @@ const Navbar = () => {
 export default Navbar
 
 
-const Navlink = (path, name) => {
+const Navlink = ({ path, name, currentPath }) => {
+    console.log(currentPath, path)
     return (<li>
-        <Link className="text-gray-500 transition hover:text-gray-500/75" href={path}>
+        <Link className={`${currentPath == path ? "text-lime-800" : "text-gray-500"} transition hover:text-gray-500/75`} href={path}>
             {name}
         </Link>
     </li>)
