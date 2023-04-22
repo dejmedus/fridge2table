@@ -5,11 +5,11 @@ export default function WhyPlantBased() {
             <h2 className="mt-6 text-2xl font-medium text-lime-800">Why Plant-Based?</h2>
             <h3 className="mt-2 mb-6 text-lg font">Reduced meat consumption slows climate change. Here's how:</h3>
             <div className="w-3/5 space-y-4">
-                {/* <FAQ
+                <FAQ
                     title="The Impact of Agriculture"
-                    body="Agriculture has a big impact on our earth and its land, water, and species diversity. Today, 96% of non-human mammals on earth are farmed livestock and  71% of birds are farmed poultry."
-                    citations={[[1, "Environmental Impacts of Food Production", "https://ourworldindata.org/environmental-impacts-of-food"]]}
-                /> */}
+                    body="Food production has a big impact on our earth and its land, water, and species diversity. Livestock production is the biggest human contributor to species decline and has led to over 60 percent decline in species populations since 1970. [1] Today, 96% of non-human mammals on earth are farmed livestock and 71% of birds are farmed poultry. [2]"
+                    citations={[[1, "Biodiversity and Species Loss", "https://www.mondaycampaigns.org/meatless-monday/research/environment"], [2, "Environmental Impacts of Food Production", "https://ourworldindata.org/environmental-impacts-of-food"]]}
+                />
                 <FAQ
                     title="Land Use"
                     body="Half of all habitable land is set aside for agriculture. Nearly 80% of that is used for animal agriculture (meat and dairy). However, animal foods account for only 18% of calorie intake and 37% of protein intake - plants provide the bulk of protein and calories globally. Eating more plant-based meals means more efficient land use."
@@ -23,8 +23,8 @@ export default function WhyPlantBased() {
                 />
                 <FAQ
                     title="Eat Local?"
-                    body="Unfortunately, evidence shows that eating locally has little effect on the ecological impact of food. The transportation of food accounts for only 5% of food's greenhouse gas emissions.[1] The vast majority of emissions come from the production process. [2] When accounting for land use, water use, nutrient pollution, and habitat disturbance, beef has roughly 800x the environmental impact of soy - regardless of how far it is transported. [3]"
-                    citations={[[1, "Environmental Impacts of Food Production", "https://ourworldindata.org/environmental-impacts-of-food"], [2, "Food and Climate Change", "https://www.un.org/en/climatechange/science/climate-issues/food"], [3, "Which food is better for the planet?", "https://www.washingtonpost.com/climate-environment/interactive/2023/food-impact-climate-water-wildlife/"]]}
+                    body="Unfortunately, evidence shows that eating locally has little effect on the ecological impact of food. The transportation of food accounts for only 5% of food's greenhouse gas emissions. [1] The vast majority of emissions come from the production process. [2] Livestock production creates more greenhouse gases than the entire transportation sector – all the cars, trucks, planes, and trains in the world – combined [3]"
+                    citations={[[1, "Environmental Impacts of Food Production", "https://ourworldindata.org/environmental-impacts-of-food"], [2, "Food and Climate Change", "https://www.un.org/en/climatechange/science/climate-issues/food"], [3, "Meatless Monday", "https://www.mondaycampaigns.org/meatless-monday/research/environment"]]}
                 />
 
             </div>
