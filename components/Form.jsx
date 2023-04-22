@@ -2,12 +2,9 @@
 import { useState, useEffect } from "react"
 
 const Form = () => {
-    const [ingredients, setIngredients] = useState(["pasta"]);
+    const [ingredients, setIngredients] = useState([]);
     const [addIngredient, setAddIngredient] = useState("");
 
-    useEffect(() => {
-        // db
-    }, [ingredients])
 
     return (
         <form
@@ -31,6 +28,7 @@ const Form = () => {
 
                 <button
                     onClick={() => {
+                        console.log(addIngredient, addIngredient.trim())
                         if (!ingredients.includes(addIngredient)) {
                             setIngredients(cur => [...cur, addIngredient.toLowerCase()]);
                         }
@@ -38,7 +36,7 @@ const Form = () => {
                     }}
                     type="button"
                     className="p-3 rounded-full bg-lime-600 hover:bg-lime-700 disabled:hover:bg-lime-800 disabled:bg-lime-800 disabled:text-neutral-400"
-                    disabled={!addIngredient}
+                    disabled={!addIngredient || addIngredient.trim() == ''}
                 >
                     <span className="sr-only">Add Ingredient</span>
                     <svg
