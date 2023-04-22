@@ -27,31 +27,38 @@ const Navbar = () => {
                             <Navlink name="Recipe Finder" path="/recipe-finder" currentPath={currentPath} />
                             <Navlink name="Ingredient Swap" path="/ingredient-swap" currentPath={currentPath} />
                             <Navlink name="Why Plant-Based?" path="/why-plant-based" currentPath={currentPath} />
+                            {user ? <span className="flex items-center gap-1 text-gray-500 hover:text-gray-500/75">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <Navlink name="Cookbook" path="/cookbook" currentPath={currentPath} />
+                            </span> : null}
                         </ul>
                     </nav>
 
                     <div className="flex items-center gap-4">
                         {!user ?
                             <div className="sm:flex sm:gap-4">
-                                <a
+                                <Link
                                     className="block rounded-md bg-lime-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-lime-700"
                                     href="/signin"
                                 >
                                     Login
-                                </a>
+                                </Link>
 
-                                <a
+                                <Link
                                     className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-lime-600 transition hover:text-lime-600/75 sm:block"
                                     href="/signup"
                                 >
                                     Signup
-                                </a>
-                            </div> : <a
-                                className="block rounded-md bg-lime-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-lime-700"
-                                href="/account"
-                            >
-                                Account
-                            </a>}
+                                </Link>
+                            </div> :
+                            <div className="sm:flex sm:gap-4">
+                                <Link
+                                    className="block rounded-md bg-lime-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-lime-700"
+                                    href="/account"
+                                >
+                                    Account
+                                </Link>
+                            </div>}
                         <button
                             className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
                         >
