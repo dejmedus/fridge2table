@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className="bg-neutral-100">
         <AuthContextProvider>
           <Navbar />
-          <div className='flex flex-col items-center h-full sm:mt-6'>
+          <div className='flex flex-col items-center h-full mb-12'>
             {children}
           </div>
         </AuthContextProvider>
