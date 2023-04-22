@@ -47,7 +47,7 @@ function Page() {
                     </h2>
 
                     <p className="mt-4 leading-relaxed text-neutral-500">
-                        Sustainable eating made easy. Simply input the ingredients you have on hand, and receive delicious plant-based recipe options.
+                        Thank you for contributing to a greener world! Preventing food waste and reducing meat consumption will help lower the impact of food production.
                     </p>
 
                     <form onSubmit={handleForm} className="grid grid-cols-6 gap-6 mt-4">
