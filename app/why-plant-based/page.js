@@ -2,12 +2,12 @@
 export default function WhyPlantBased() {
     return (
         <>
-            <h2 class="font-medium text-2xl mt-6 text-lime-800">Why Plant-Based?</h2>
-            <h3 class="font text-lg mt-2 mb-6">Reduced meat consumption slows climate change. Here's how:</h3>
-            <div class="space-y-4 w-3/5">
+            <h2 className="mt-6 text-2xl font-medium text-lime-800">Why Plant-Based?</h2>
+            <h3 className="mt-2 mb-6 text-lg font">Reduced meat consumption slows climate change. Here's how:</h3>
+            <div className="w-3/5 space-y-4">
                 {/* <FAQ
                     title="The Impact of Agriculture"
-                    body="Agriculture has a big impact on our earth and its land, water, and species diversity. Today, 96% of non-human mammals on earth are farmed livestock and  71% of birds are farmed poultry. "
+                    body="Agriculture has a big impact on our earth and its land, water, and species diversity. Today, 96% of non-human mammals on earth are farmed livestock and  71% of birds are farmed poultry."
                     citations={[[1, "Environmental Impacts of Food Production", "https://ourworldindata.org/environmental-impacts-of-food"]]}
                 /> */}
                 <FAQ
@@ -34,20 +34,19 @@ export default function WhyPlantBased() {
 
 const FAQ = ({ title, body, citations }) => {
     return (<details
-        class="group border-l-4 border-lime-500 bg-neutral-50 p-4 [&_summary::-webkit-details-marker]:hidden"
-        open
+        className="group border-l-4 border-lime-500 bg-neutral-50 p-4 [&_summary::-webkit-details-marker]:hidden"
     >
-        <summary class="flex items-center justify-between cursor-pointer">
-            <h2 class="text-lg font-medium text-neutral-900">
+        <summary className="flex items-center justify-between cursor-pointer">
+            <h2 className="text-lg font-medium text-neutral-900">
                 {title}
             </h2>
 
             <span
-                class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-neutral-900 sm:p-3"
+                className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-neutral-900 sm:p-3"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                    className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                 >
@@ -60,7 +59,7 @@ const FAQ = ({ title, body, citations }) => {
             </span>
         </summary>
 
-        <p class="mt-4 leading-relaxed text-neutral-700">
+        <p className="mt-4 leading-relaxed text-neutral-700">
             {body}
         </p>
 
@@ -71,7 +70,7 @@ const FAQ = ({ title, body, citations }) => {
                     return (
                         <li>
                             {index}:{" "}
-                            <a href={path} class="leading-relaxed underline hover:text-lime-700 text-neutral-700">
+                            <a href={path} className="leading-relaxed underline hover:text-lime-700 text-neutral-700">
                                 {name}
                             </a>
                         </li>
