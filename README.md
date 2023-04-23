@@ -2,7 +2,7 @@
 
 Sustainable eating made easy. Simply input the ingredients you have on hand, and receive delicious plant-based recipe options.
 
-Made in < 34 hours for MLH ClimateHacks hackathon.
+Made in < 34 hours for MLH ClimateHacks hackathon. Awarded Second Overall 🎉
 
 ### Impact of food production
 
