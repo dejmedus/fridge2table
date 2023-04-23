@@ -4,6 +4,13 @@ Sustainable eating made easy. Simply input the ingredients you have on hand, and
 
 Made in < 34 hours for MLH ClimateHacks hackathon.
 
+### Impact of food production
+
+- Food production is responsible for nearly a third of all greenhouse gas emissions and requires half of all habitable land on earth. 
+- Evidence shows that eating locally has little effect on the ecological impact of food, as transportation, refrigeration, and packaging accounts for only 5% of food's greenhouse gas emissions.
+- However, studies show that we can significantly reduce our food's environmental footprint by incorporating more plant-based (meals without meat or dairy) into our diets! 
+
+[Our World in Data - Environmental impacts of food](https://ourworldindata.org/environmental-impacts-of-food)
 
 ### Built with
 
@@ -17,6 +24,7 @@ Made in < 34 hours for MLH ClimateHacks hackathon.
   - [Signup carrots](https://unsplash.com/photos/gkgw3O2pbpQ) by Fernando Andrade
   - [Homepage flowers](https://unsplash.com/photos/caZQoord96c) by Shaylyn
   - [Homepage greens](https://unsplash.com/photos/i14VzlCp-Eo) by Monika Grabkowska
+- [Meatless Monday gif](https://www.mondaycampaigns.org/meatless-monday/package/environmental-benefits-of-meatless-monday-and-plant-based-eating)
 
 ### Resources
 
@@ -29,7 +37,6 @@ Made in < 34 hours for MLH ClimateHacks hackathon.
 - [Meatless Monday Campaign](https://www.mondaycampaigns.org/meatless-monday)
 - [Environmental impacts of food](https://ourworldindata.org/environmental-impacts-of-food ) - Our world in data
 - [UN Climate Issues - Food](https://www.un.org/en/climatechange/science/climate-issues/food)
-- [Compare food impact](https://www.washingtonpost.com/climate-environment/interactive/2023/food-impact-climate-water-wildlife/)
 
 ### Setup
 
