@@ -65,18 +65,18 @@ export default function Cookbook() {
 }
 
 const Pagination = ({ pageMax, currentPage, setPage, router }) => {
-    return (<div class="inline-flex items-center justify-center gap-3 mt-8">
+    return (<div className="inline-flex items-center justify-center gap-3 mt-8">
         <button
             onClick={() => {
                 setPage(cur => cur > 0 ? cur - 1 : cur);
                 router.push("/cookbook/#topOfPage");
             }}
-            class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
+            className="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
         >
-            <span class="sr-only">Next Page</span>
+            <span className="sr-only">Next Page</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-3"
+                className="h-3 w-3"
                 viewBox="0 0 20 20"
                 fill="currentColor"
             >
@@ -88,9 +88,9 @@ const Pagination = ({ pageMax, currentPage, setPage, router }) => {
             </svg>
         </button>
 
-        <p class="text-lg font-medium">
+        <p className="text-lg font-medium">
             {currentPage}
-            <span class="mx-0.25">/</span>
+            <span className="mx-0.25">/</span>
             {pageMax}
         </p>
 
@@ -99,12 +99,12 @@ const Pagination = ({ pageMax, currentPage, setPage, router }) => {
                 setPage(cur => cur < pageMax ? cur + 1 : cur);
                 router.push("/cookbook/#topOfPage");
             }}
-            class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
+            className="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
         >
-            <span class="sr-only">Next Page</span>
+            <span className="sr-only">Next Page</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-3"
+                className="h-3 w-3"
                 viewBox="0 0 20 20"
                 fill="currentColor"
             >
