@@ -60,6 +60,8 @@ const Form = ({ recipes, ingredients, setIngredients, setTopRecipes }) => {
                     id="ingredient"
                     placeholder="Ingredients"
                     className="w-96 rounded-md text-neutral-950 border-neutral-200 py-2.5 pl-2 mr-1 shadow-sm sm:text-sm"
+                    autoComplete={false}
+                    autoFocus={true}
                 />
 
                 <button
