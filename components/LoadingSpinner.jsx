@@ -4,7 +4,7 @@ export const LoadingSpinner = () => {
     return (
         <div className="mt-24" aria-label="Loading..." role="status">
             <svg className="w-28 h-28 animate-spin stroke-lime-800" viewBox="0 0 256 256">
-                <line x1="128" y1="32" x2="128" y2="64" strokeLinecap="round" strokeLinejoin="round" stroke-width="24"></line>
+                <line x1="128" y1="32" x2="128" y2="64" strokeLinecap="round" strokeLinejoin="round" strokeWidth="24"></line>
                 <line
                     x1="195.9"
                     y1="60.1"
@@ -22,7 +22,7 @@ export const LoadingSpinner = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="24"></line>
-                <line x1="128" y1="224" x2="128" y2="192" strokeLinecap="round" strokeLinejoin="round" stroke-width="24"></line>
+                <line x1="128" y1="224" x2="128" y2="192" strokeLinecap="round" strokeLinejoin="round" strokeWidth="24"></line>
                 <line
                     x1="60.1"
                     y1="195.9"
