@@ -16,8 +16,8 @@ Made in < 34 hours for MLH ClimateHacks hackathon.
 
 - React/[Next.js](https://nextjs.org/)
 - TailwindCSS
-- HyperUI
-- Firebase Auth & Cloud Storage
+- [HyperUI](https://www.hyperui.dev/) & the Myna UI [spinner component](https://mynaui.com/spinner/)
+- Google Firebase Auth & Cloud Storage
 - [Recipe dataset csv](https://www.kaggle.com/datasets/rodrigoazs/vegan-recipes?resource=download)
 - [Pulsar Color Icons by Icons8](https://icons8.com/icon/LI3lJ9ZSRh59/ingredients)
 - Images from Unsplash
