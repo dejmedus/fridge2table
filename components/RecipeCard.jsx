@@ -36,7 +36,7 @@ export const RecipeCard = ({ recipe, id, href, title, ingredients, instructions,
 
         <div className="sm:flex sm:justify-between sm:gap-4">
             <div>
-                <a href={href} className="text-lg font-bold hover:underline text-neutral-900 sm:text-xl">
+                <a href={href} target="_blank" className="text-lg font-bold hover:underline text-neutral-900 sm:text-xl">
                     {title}
                 </a>
             </div>
