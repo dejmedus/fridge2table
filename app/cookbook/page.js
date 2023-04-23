@@ -24,7 +24,7 @@ export default function Cookbook() {
                 const userData = result.data()
 
                 setCookbook(userData.cookbook)
-                setPageTotal(Math.round(userData.cookbook.length / 5))
+                setPageTotal(Math.ceil(userData.cookbook.length / 5) - 1)
             }
         }
         if (user) {
@@ -71,12 +71,12 @@ const Pagination = ({ pageMax, currentPage, setPage, router }) => {
                 setPage(cur => cur > 0 ? cur - 1 : cur);
                 router.push("/cookbook/#topOfPage");
             }}
-            className="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
+            className="inline-flex items-center justify-center w-8 h-8 border border-gray-100 rounded rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
         >
             <span className="sr-only">Next Page</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-3 w-3"
+                className="w-3 h-3"
                 viewBox="0 0 20 20"
                 fill="currentColor"
             >
@@ -99,12 +99,12 @@ const Pagination = ({ pageMax, currentPage, setPage, router }) => {
                 setPage(cur => cur < pageMax ? cur + 1 : cur);
                 router.push("/cookbook/#topOfPage");
             }}
-            className="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
+            className="inline-flex items-center justify-center w-8 h-8 border border-gray-100 rounded rtl:rotate-180 bg-neutral-50 hover:bg-neutral-200"
         >
             <span className="sr-only">Next Page</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-3 w-3"
+                className="w-3 h-3"
                 viewBox="0 0 20 20"
                 fill="currentColor"
             >
