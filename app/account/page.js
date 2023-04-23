@@ -15,16 +15,14 @@ function Account() {
             return console.log(error)
         }
 
-        // else successful
-        console.log(result)
         return router.push("/")
     }
 
     if (user) {
         return (<>
-            <h1>You are logged in as {user.email}</h1>
+            <h2 className="my-12">You are logged in as {user.email}</h2>
             <button
-                className="block rounded-md bg-lime-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-lime-700"
+                className="block rounded-md bg-lime-800 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-lime-700"
                 onClick={logout}
             >
                 Signout
