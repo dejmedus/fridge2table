@@ -20,7 +20,6 @@ export default async function signUp(email, password) {
     if (error) {
       return console.log(error)
     }
-    console.log(dataResult)
 
   } catch (e) {
     error = e;
