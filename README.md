@@ -55,3 +55,33 @@ npm run dev
 ```
 
 ### Screenshots
+
+<details>
+<summary>Homepage</summary>
+<img width="1251" alt="hompage-top" src="https://user-images.githubusercontent.com/59973863/233827008-12617b2b-0b1f-4c60-b9e7-a72b458fb2dd.png">
+<img width="1245" alt="homepage-bottom" src="https://user-images.githubusercontent.com/59973863/233827010-4e2d0a68-104a-4547-9d98-8203a84394d0.png">
+</details>
+<details>
+<summary>Login/Sign up</summary>
+<img width="1248" alt="login" src="https://user-images.githubusercontent.com/59973863/233827046-105d49ac-9ea0-4b82-b7f5-a60c8c4c6485.png">
+<img width="1251" alt="signup" src="https://user-images.githubusercontent.com/59973863/233827047-50a2cf80-9b3c-4316-bc08-f777ab919c71.png">
+</details>
+<details>
+<summary>Recipe Finder</summary>
+<img width="1251" alt="finder before submit" src="https://user-images.githubusercontent.com/59973863/233827076-0132e23a-18ae-40ff-98fd-07fd60817127.png">
+<img width="1253" alt="finder results" src="https://user-images.githubusercontent.com/59973863/233827077-27f0fa8e-8ab8-43e3-82c8-08fefc1591c0.png">
+</details>
+<details>
+<summary>Cookbook</summary>
+<img width="1247" alt="cookbook-top" src="https://user-images.githubusercontent.com/59973863/233827108-4baece1e-f492-40da-9e94-5e7bafada6a6.png">
+<img width="1252" alt="cookbook-bottom" src="https://user-images.githubusercontent.com/59973863/233827111-c9097e1b-cd5d-4b44-85b2-c73762f29e49.png">
+</details>
+<details>
+<summary>FAQ</summary>
+<img width="1253" alt="FAQ-closed" src="https://user-images.githubusercontent.com/59973863/233827135-4e3be8ed-7696-45a4-b458-eec82fbcaa45.png">
+<img width="1246" alt="FAQ-open" src="https://user-images.githubusercontent.com/59973863/233827133-7ac214cc-0a90-4f34-a50a-ca191a477402.png">
+</details>
+<details>
+<summary>Ingredients Swap</summary>
+<img width="1246" alt="ingredients swap" src="https://user-images.githubusercontent.com/59973863/233827144-57859afd-db1b-408a-b67b-2dfe67c49edc.png">
+</details>
