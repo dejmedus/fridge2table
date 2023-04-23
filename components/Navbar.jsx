@@ -18,7 +18,7 @@ const Navbar = () => {
                 <Link className="flex items-center gap-2 text-lime-950" href="/">
                     <span className="sr-only">Home</span>
                     <Image src={fridge2table} width={38} height={38} alt="Fridge2Table logo. Bowl with food." />
-                    <h1 className="text-lg font-bold">Fridge2Table</h1>
+                    <h1 className="text-lg font-semibold">Fridge2Table</h1>
                 </Link>
 
                 <div className="flex items-center justify-end flex-1 md:justify-between">
