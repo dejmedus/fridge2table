@@ -1,17 +1,53 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
-const Form = () => {
-    const [ingredients, setIngredients] = useState([]);
+const Form = ({ recipes, ingredients, setIngredients, setTopRecipes }) => {
     const [addIngredient, setAddIngredient] = useState("");
 
+    function handleSearch(e) {
+        e.preventDefault();
+
+        let topRecipes = [];
+        let currentLowest = 0
+
+        for (let index in recipes) {
+            let ingredientList = recipes[index].ingredients.toLowerCase();
+
+            let count = 0;
+            for (let i = 0; i < ingredients.length; i++) {
+                let regex = new RegExp(ingredients[i].toLowerCase(), 'g');
+
+                if (ingredientList.match(regex)) {
+                    count++;
+                }
+            }
+
+            // if recipe contains at least as many ingredients as currentLowest
+            if (count >= currentLowest) {
+                // try to return at least 5
+                if (topRecipes.length < 5) {
+                    topRecipes.push([count, recipes[index]])
+                }
+                // if higher count is found, replace lowest count recipe
+                else {
+                    if (count > topRecipes[0][0]) {
+                        topRecipes[0] = [count, recipes[index]]
+                    }
+                }
+                // sort recipes and set new currentLowest
+                topRecipes.sort((a, b) => a[0] - b[0]);
+                currentLowest = topRecipes[0][0];
+            }
+        }
+
+        setTopRecipes(topRecipes);
+        setIngredients([])
+    }
 
     return (
         <form
-            onSubmit={(e) => {
-                e.preventDefault()
-            }}
-            className="flex flex-col items-center justify-center w-full gap-6 px-4 py-12 sm:max-w-2xl sm:py-6 sm:px-16 text-neutral-100 bg-lime-900 sm:rounded-2xl"
+            onSubmit={handleSearch}
+            className="flex flex-col items-center justify-center w-full gap-6 px-4 py-12 mt-8 sm:max-w-2xl sm:py-6 sm:px-16 text-neutral-100 bg-lime-900 sm:rounded-2xl"
         >
             <label htmlFor="ingredient" className="font-bold">What ingredients do you have on hand?</label>
             <div className="relative flex items-center">
@@ -28,7 +64,6 @@ const Form = () => {
 
                 <button
                     onClick={() => {
-                        console.log(addIngredient, addIngredient.trim())
                         if (!ingredients.includes(addIngredient)) {
                             setIngredients(cur => [...cur, addIngredient.toLowerCase()]);
                         }
