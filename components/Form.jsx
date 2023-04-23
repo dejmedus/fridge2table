@@ -106,7 +106,7 @@ export default Form
 
 const Ingredient = ({ ingredient, ingredients, setIngredients }) => {
     return (
-        <div name={ingredient} className="relative flex items-center px-2 border border-dashed rounded-lg border-neutral-300 w-fit">
+        <div key={ingredient} name={ingredient} className="relative flex items-center px-2 border border-dashed rounded-lg border-neutral-300 w-fit">
             <span className="pl-1 pr-2">{ingredient}</span>
             <button
                 type="button"
